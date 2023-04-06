@@ -19,13 +19,13 @@ export default function Home() {
             Static affordance: The behavior of the objects in the game should be interpreted by their visibility; e.g. bubbles inherently make sense to pop by dragging to a beach
           </li>
           <li>
-            Physical constraints: A bubble cannot be dragged anywhere but to a player’s beach on their turn, so a player cannot add the value to an enemy player’s sum by accident.
+            Physical constraints: A bubble cannot be dragged anywhere but to a player's beach on their turn, so a player cannot add the value to an enemy player's sum by accident.
           </li>
           <li>
-            Externalization of information: In the old design, a player’s current sum would not be displayed as they are playing the game. Now the player’s current sum is kept up to date as they are playing so it’s easier to compare their sum to the game’s target sum.
+            Externalization of information: In the old design, a player's current sum would not be displayed as they are playing the game. Now the player's current sum is kept up to date as they are playing so it's easier to compare their sum to the game's target sum.
           </li>
           <li>
-            Feedback: In the original game, if Player 1 drags a bubble to the wrong side of the game, there is no feedback for why it didn’t work. Added in a pop-up message explaining they dragged it to the wrong beach to improve user feedback.
+            Feedback: In the original game, if Player 1 drags a bubble to the wrong side of the game, there is no feedback for why it didn't work. Added in a pop-up message explaining they dragged it to the wrong beach to improve user feedback.
           </li>
           <li>
             Consistency: The visual aesthetic of the game and its key components have the same cartoony aesthetic throughout.
@@ -76,6 +76,68 @@ export default function Home() {
           </li>
         </ul>
       </p>
+      <p>Final heuristic evaluation:</p>
+      <ol>
+        <li>
+          Visibility of System Status<br />
+          Tooltips within each game inform the user of what each component of the game is used for. For example, hovering the mouse over the text box in the game Coin Box displays a tooltip describing what the user should type into the box.<br />
+          For all games the buttons color and the user's cursor changes if the user's cursor is hovering the button.
+        </li>
+        <li>
+          Match Between the System and the Real World<br />
+          For most games, it was not necessary to have a match between the real world and the system. The game depictions are meant to be engaging, rather than a perfect capture of the real world. However, Grouping and Grazing adjusted the metaphorical elements to better depict the real world.
+        </li>
+        <li>
+          User Control & Freedom<br />
+          The popup menu, which is present within every game, can be used to restart or exit the game. Upon pressing the restart or exit button the user is asked if they are sure and they can choose “yes” or “no”.
+        </li>
+        <li>
+          Match Between the System and the Real World<br />
+          For most games, it was not necessary to have a match between the real world and the system. The game depictions are meant to be engaging, rather than a perfect capture of the real world. However, Grouping and Grazing adjusted the metaphorical elements to better depict the real world.
+        </li>
+        <li>
+          Consistency and Standards<br />
+          The system is aesthetically consistent using a cartoon style for all components. The system is functionally consistent because all games consist of objects which can be selected and moved using mouse input.
+        </li>
+        <li>
+          Recognition vs. Recall in User Interfaces<br />
+          Originally, the users needed to read a long paragraph of text to understand the game functions. Now the user can hover over components to display tooltips which tell the user what that component does. There is no need for the user to memorize a paragraph now that they can see tooltips.
+        </li>
+        <li>
+          Flexibility and Efficiency of Use<br />
+          Due to the project's function for education, there was not much need to introduce flexibility in our redesign. Each game serves a purpose in teaching children a counting method, and the redesign focused on improving overall ease of use for these teaching aspects.
+        </li>
+        <li>
+          Aesthetic and Minimalist Design<br />
+          Originally, the games seemed cluttered and confusing. Now each game has a reduced UI to only display the necessary information to play the game.
+        </li>
+        <li>
+          Help Users Recognize, Diagnose and Recover from Error<br />
+          As a general rule, all games introduced feedback for diagnosing errors. Some games also went a step further and added in 'undo' options while selecting certain elements in the redesign step (e.g. Okta's Rescue).
+        </li>
+        <li>
+          Help & Documentation<br />
+          There was too much documentation in the original games, which was overwhelming for the target end user group. We redesigned the games to include better functionality and remove the excessive documentation.
+        </li>
+      </ol>
+      <p>Improvements:</p>
+      <ol>
+        <li>
+          For our project, we only implemented one functional mode for each game. In the future, additional modes could be added; e.g. “Decimal” or “Negative” to Deep Sea Duel.
+        </li>
+        <li>
+          Make the game available on mobile.
+        </li>
+        <li>
+          Add keyboard controls and multi-select to increase accessibility.
+        </li>
+        <li>
+          Future versions of the game bundle may contain more games as well as a way to filter games.
+        </li>
+        <li>
+          Since this is a kids educational games package, a good improvement would be the introduction of fun/silly sounds to help keep the user engaged, but also to provide an additional form of 'forward' feedback.
+        </li>
+      </ol>
     </main>
   )
 }
