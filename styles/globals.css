@@ -119,3 +119,8 @@ p {
     width: 100%;
   }
 }
+
+.videos {
+  display: block;
+  margin: 0 auto;
+}

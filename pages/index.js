@@ -23,7 +23,10 @@ export default function Home() {
       <ul>
         <li>
           <p className='info'>Deep Sea Duel</p>
-          
+          <iframe className="videos" width="840" height="630"
+          src="https://www.youtube.com/embed/StSFKdfgyBw"></iframe>
+          <iframe className="videos" width="840" height="630"
+          src="https://www.youtube.com/embed/QT_50FxYzUU"></iframe>
 
 
           <ul>
@@ -83,10 +86,10 @@ export default function Home() {
         </li>
         <li>
           <p className='info'>{`Okta's Rescue`}</p>
-          <iframe width="420" height="315"
-          src="https://youtu.be/FVEfs-BzoTw"></iframe>
-          <iframe width="420" height="315"
-          src="https://youtu.be/c1zdxxeQKZg"></iframe>
+          <iframe className='videos' width="840" height="630"
+          src="https://www.youtube.com/embed/FVEfs-BzoTw"></iframe>
+          <iframe className='videos' width="840" height="630"
+          src="https://www.youtube.com/embed/c1zdxxeQKZg"></iframe>
 
           <ul>
             <li>
