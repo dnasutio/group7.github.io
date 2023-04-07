@@ -16,7 +16,7 @@ export default function Home() {
         These games were primarily focused on counting. The problems with the initial games included the following issues: overly verbose instructions, little to no feedback on errors, and poor controls that were un-intuitive to use. In our redesign, we aimed to correct these issues, and implement new ideas attuned with good human-computer interaction principles.
       </p>
       <p className='info'>Navigational Map:</p>
-      <Image className="imgy" src="/map.svg" alt="Navigational Map" width={600} height={300} />
+      <Image className="imgy" src="/map.svg" alt="Navigational Map" width={420} height={315} />
       <p className='info'>Design Principles:</p>
       <p id="tooltip">Hover me!</p>
       <div id="hidden1">Hi I am Tooltip! ...Interactivity!</div>
@@ -49,6 +49,11 @@ export default function Home() {
         </li>
         <li>
           <p className='info'>Grouping and Grazing</p>
+          <div className='ggpics-grid'>
+          <Image id="ggpic1" src="/oldgg.png" alt="Before image of the Original Grouping and Grazing" width={950} height={560} />
+          <Image id="ggpic2" src="/newgg.png" alt="Before image of the the new redesign" width={950} height={560} />
+          </div>
+
           <ul>
             <li>
               Consistency: Many of the UI elements did not follow the same design languages. Toolbars were boxes with a dated gradient, but buttons had a flat, minimalistic design. To make the design language more consistent, the toolbars were removed and the game keeps the flat, minimalistic design.
@@ -66,6 +71,11 @@ export default function Home() {
         </li>
         <li>
           <p className='info'>Coinbox</p>
+          <Image id="cbpic1" src="/coinboxold.png" alt="Before image of the OriginalCoinBox" width={950} height={560} />
+          <Image id="cbpic2" src="/coinboxss.png" alt="Before image of the new redesign" width={950} height={560} />
+
+
+
           <ul>
             <li>
             Dynamic Affordance: Previously there was no indication of whether the coins were selectable. Now, hovering a coin changes the cursor to look like a hand.

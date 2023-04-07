@@ -41,8 +41,8 @@ body {
   /* background-color: #649dbc; */
   background: linear-gradient(13deg, #649dbc 0%, #85AC40 33.33%, pink 65.525%,  #12b2ff 100%);
   text-align: justify;
-  padding: 0;
-  margin: 0;
+  padding: 1rem;
+  margin: 1rem;
   
   overflow-x: hidden;
 }
@@ -123,4 +123,29 @@ p {
 .videos {
   display: block;
   margin: 0 auto;
+}
+
+
+
+
+
+
+.ggpics-grid {
+  display: block;
+  left: 1rem;
+  margin: 0 auto;
+}
+
+#ggpic1 {
+  margin-left: 10%;
+}
+#ggpic2 {
+  margin-left: 10%;
+}
+
+#cbpic1 {
+  margin-left: 10%;
+}
+#cbpic2 {
+  margin-left: 10%;
 }
