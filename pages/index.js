@@ -6,19 +6,26 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Group 7 Final Report</h1>
-      <h2>Educational Games</h2>
-      <p>Executive Summary:</p>
+      <h1 id="title1">Group 7 Final Report</h1>
+      <h2 id="title2">Educational Games</h2>
+      <h3 id="title3">by </h3>
+      <h4 id="title4">Ryan Truong, Zhenru Peng, Eleora Hamming, Dylan Nasution, and Christopher Co-Dyre</h4>
+      <p className='info'>Executive Summary:</p>
       <p>
         In our initial proposal, we decided to redesign four different educational games for children aged pre-kindergarten to grade 8 and bundle them into one consolidated website. 
         These games were primarily focused on counting. The problems with the initial games included the following issues: overly verbose instructions, little to no feedback on errors, and poor controls that were un-intuitive to use. In our redesign, we aimed to correct these issues, and implement new ideas attuned with good human-computer interaction principles.
       </p>
-      <p>Navigational Map:</p>
-      <Image src="/map.svg" alt="Navigational Map" width={600} height={300} />
-      <p>Design Principles:</p>
+      <p className='info'>Navigational Map:</p>
+      <Image className="imgy" src="/map.svg" alt="Navigational Map" width={600} height={300} />
+      <p className='info'>Design Principles:</p>
+      <p id="tooltip">Hover me!</p>
+      <div id="hidden1">Hi I am Tooltip! ...Interactivity!</div>
       <ul>
         <li>
-          <p>Deep Sea Duel</p>
+          <p className='info'>Deep Sea Duel</p>
+          
+
+
           <ul>
             <li>
               Static Affordance: The behavior of the objects in the game should be interpreted by their visibility; e.g. bubbles inherently make sense to pop by dragging to a beach
@@ -38,7 +45,7 @@ export default function Home() {
           </ul>
         </li>
         <li>
-          <p>Grouping and Grazing</p>
+          <p className='info'>Grouping and Grazing</p>
           <ul>
             <li>
               Consistency: Many of the UI elements did not follow the same design languages. Toolbars were boxes with a dated gradient, but buttons had a flat, minimalistic design. To make the design language more consistent, the toolbars were removed and the game keeps the flat, minimalistic design.
@@ -55,11 +62,32 @@ export default function Home() {
           </ul>
         </li>
         <li>
-          <p>Coinbox</p>
-          <ul></ul>
+          <p className='info'>Coinbox</p>
+          <ul>
+            <li>
+            Dynamic Affordance: Previously there was no indication of whether the coins were selectable. Now, hovering a coin changes the cursor to look like a hand.
+            </li>
+            <li>
+            Familiarity: Changed coins to have their corresponding images rather than faces no one recognizes.
+            </li>
+            <li>
+            Psychological Constraints: Previously, there were two identical bins which both accepted coins but the accepted coins depended on the original location of the coins. Now, the bin where a coin can go is highlighted when the user starts dragging. 
+            </li>
+            <li>
+            Metaphor: Cash register to represent a familiar place to exchange money instead of a bin.
+            </li>
+            <li>
+            Visibility: A table for selecting coins to exchange for is used instead of a bin to make it more clear what the purpose of the component is. Now there is one bin for exchanging coins from the floor and one table to choose coins which have a total value corresponding to the coins.
+            </li>
+          </ul>
         </li>
         <li>
-          <p>{`Okta's Rescue`}</p>
+          <p className='info'>{`Okta's Rescue`}</p>
+          <iframe width="420" height="315"
+          src="https://youtu.be/FVEfs-BzoTw"></iframe>
+          <iframe width="420" height="315"
+          src="https://youtu.be/c1zdxxeQKZg"></iframe>
+
           <ul>
             <li>
               Dynamic Affordance: In the original game, there is no feedback for when you perform an action correctly. The game expects you to know what is correct only through the animation. By applying dynamic affordance, the okta is highlighted in yellow when the user hover over which acts like a visual cue. In this case, similar visual cues are present, but are accompanied by additional feedbacks, so that the user knows what UI elements they can interact with and actions they can perform.
@@ -73,7 +101,7 @@ export default function Home() {
           </ul>
         </li>
         <li>
-          <p>Navigational Website Package</p>
+          <p className='info'>Navigational Website Package</p>
           <ul>
             <li>
               Chunking: By way of utilizing white space, visually distinguishing between which options are for which game is clearly understood without the need for extra information; The tutorial and play buttons are grouped together, underneath the respective name and image of the game they represent.
@@ -90,7 +118,7 @@ export default function Home() {
           </ul>
         </li>
       </ul>
-      <p>Final Heuristic Evaluations:</p>
+      <p className='info'>Final Heuristic Evaluations:</p>
       <ol>
         <li>
           Visibility of System Status<br />
@@ -134,7 +162,7 @@ export default function Home() {
           There was too much documentation in the original games, which was overwhelming for the target end user group. We redesigned the games to include better functionality and remove the excessive documentation.
         </li>
       </ol>
-      <p>Improvements:</p>
+      <p className='info'>Improvements:</p>
       <ol>
         <li>
           For our project, we only implemented one functional mode for each game. In the future, additional modes could be added; e.g. “Decimal” or “Negative” to Deep Sea Duel.

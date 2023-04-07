@@ -22,3 +22,100 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 } */
+
+/* html,
+:root {
+  --var:0;
+} */
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Comic Neue", "sans-serif";
+  font-size: 2rem;  
+  color:aliceblue;
+  text-shadow: 0px 0px 0 #000, 1px 1px 0 #000;
+  /* background-color: #649dbc; */
+  background: linear-gradient(13deg, #649dbc 0%, #85AC40 33.33%, pink 65.525%,  #12b2ff 100%);
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+  
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blueviolet;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(187, 144, 228);
+}
+
+.info {
+  font-size: 4rem;
+  text-align: center;
+  list-style-type: none;
+}
+.imgy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#title1 {
+  text-align: center;
+}
+#title2 {
+  text-decoration-line: underline;
+  text-align: center;
+}
+#title3 {
+  text-align: center;
+}
+#title4 {
+  text-align: center;
+}
+
+#tooltip {
+  background-color: blueviolet;
+}
+
+#hidden1 {
+  display: none;
+}
+
+#tooltip:hover + #hidden1 {
+  display: block;
+  color: blueviolet;
+  background-color: rgb(187, 144, 228);
+}
+
+p {
+  animation-duration: 2s;
+  animation-name: slidinging;
+}
+
+@keyframes slidinging {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
