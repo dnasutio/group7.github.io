@@ -10,7 +10,8 @@ export default function Home() {
       <h2>Educational Games</h2>
       <p>Executive Summary:</p>
       <p>
-        In our initial proposal, we decided to redesign four different educational games for children aged pre-kindergarten to grade 8 and bundle them into one consolidated website. These games were primarily focused on counting. The problems with the initial games included the following issues: overly verbose instructions, little to no feedback on errors, and poor controls that were un-intuitive to use. In our redesign, we aimed to correct these issues, and implement new ideas attuned with good human-computer interaction principles.
+        In our initial proposal, we decided to redesign four different educational games for children aged pre-kindergarten to grade 8 and bundle them into one consolidated website. 
+        These games were primarily focused on counting. The problems with the initial games included the following issues: overly verbose instructions, little to no feedback on errors, and poor controls that were un-intuitive to use. In our redesign, we aimed to correct these issues, and implement new ideas attuned with good human-computer interaction principles.
       </p>
       <p>Navigational Map:</p>
       <Image src="/map.svg" alt="Navigational Map" width={600} height={300} />
@@ -23,13 +24,13 @@ export default function Home() {
               Static Affordance: The behavior of the objects in the game should be interpreted by their visibility; e.g. bubbles inherently make sense to pop by dragging to a beach
             </li>
             <li>
-              Physical Constraints: A bubble cannot be dragged anywhere but to a player's beach on their turn, so a player cannot add the value to an enemy player's sum by accident.
+              {`Physical Constraints: A bubble cannot be dragged anywhere but to a player's beach on their turn, so a player cannot add the value to an enemy player's sum by accident.`}
             </li>
             <li>
-              Externalization of Information: In the old design, a player's current sum would not be displayed as they are playing the game. Now the player's current sum is kept up to date as they are playing so it's easier to compare their sum to the game's target sum.
+              {`Externalization of Information: In the old design, a player's current sum would not be displayed as they are playing the game. Now the player's current sum is kept up to date as they are playing so it's easier to compare their sum to the game's target sum.`}
             </li>
             <li>
-              Feedback: In the original game, if Player 1 drags a bubble to the wrong side of the game, there is no feedback for why it didn't work. Added in a pop-up message explaining they dragged it to the wrong beach to improve user feedback.
+              {`Feedback: In the original game, if Player 1 drags a bubble to the wrong side of the game, there is no feedback for why it didn't work. Added in a pop-up message explaining they dragged it to the wrong beach to improve user feedback.`}
             </li>
             <li>
               Consistency: The visual aesthetic of the game and its key components have the same cartoony aesthetic throughout.
@@ -58,7 +59,7 @@ export default function Home() {
           <ul></ul>
         </li>
         <li>
-          <p>Okta's Rescue</p>
+          <p>{`Okta's Rescue`}</p>
           <ul>
             <li>
               Dynamic Affordance: In the original game, there is no feedback for when you perform an action correctly. The game expects you to know what is correct only through the animation. By applying dynamic affordance, the okta is highlighted in yellow when the user hover over which acts like a visual cue. In this case, similar visual cues are present, but are accompanied by additional feedbacks, so that the user knows what UI elements they can interact with and actions they can perform.
@@ -78,7 +79,7 @@ export default function Home() {
               Chunking: By way of utilizing white space, visually distinguishing between which options are for which game is clearly understood without the need for extra information; The tutorial and play buttons are grouped together, underneath the respective name and image of the game they represent.
             </li>
             <li>
-              Mapping: The layout and meaning of the exit button are clear and natural in feel; The user perceives the affordance that by clicking the 'x' they understand that they are closing the game, its location specifically is familiar as to aid with this. When displaying the four titles, the Website package breaks the available space into separate panes, each containing all related controls/options/info for itself.
+              {`Mapping: The layout and meaning of the exit button are clear and natural in feel; The user perceives the affordance that by clicking the 'x' they understand that they are closing the game, its location specifically is familiar as to aid with this. When displaying the four titles, the Website package breaks the available space into separate panes, each containing all related controls/options/info for itself.`}
             </li>
             <li>
               Dynamic Affordance: When mousing over any button in the site, the button will change color slightly, indicating to the user they may click the button.
@@ -93,8 +94,8 @@ export default function Home() {
       <ol>
         <li>
           Visibility of System Status<br />
-          Tooltips within each game inform the user of what each component of the game is used for. For example, hovering the mouse over the text box in the game Coin Box displays a tooltip describing what the user should type into the box.<br />
-          For all games the buttons color and the user's cursor changes if the user's cursor is hovering the button.
+          {`Tooltips within each game inform the user of what each component of the game is used for. For example, hovering the mouse over the text box in the game Coin Box displays a tooltip describing what the user should type into the box.<br />
+          For all games the buttons color and the user's cursor changes if the user's cursor is hovering the button.`}
         </li>
         <li>
           Match Between the System and the Real World<br />
@@ -118,7 +119,7 @@ export default function Home() {
         </li>
         <li>
           Flexibility and Efficiency of Use<br />
-          Due to the project's function for education, there was not much need to introduce flexibility in our redesign. Each game serves a purpose in teaching children a counting method, and the redesign focused on improving overall ease of use for these teaching aspects.
+          {`Due to the project's function for education, there was not much need to introduce flexibility in our redesign. Each game serves a purpose in teaching children a counting method, and the redesign focused on improving overall ease of use for these teaching aspects.`}
         </li>
         <li>
           Aesthetic and Minimalist Design<br />
@@ -126,7 +127,7 @@ export default function Home() {
         </li>
         <li>
           Help Users Recognize, Diagnose and Recover from Error<br />
-          As a general rule, all games introduced feedback for diagnosing errors. Some games also went a step further and added in 'undo' options while selecting certain elements in the redesign step (e.g. Okta's Rescue).
+          {`As a general rule, all games introduced feedback for diagnosing errors. Some games also went a step further and added in 'undo' options while selecting certain elements in the redesign step (e.g. Okta's Rescue).`}
         </li>
         <li>
           Help & Documentation<br />
@@ -148,7 +149,7 @@ export default function Home() {
           Future versions of the game bundle may contain more games as well as a way to filter games.
         </li>
         <li>
-          Since this is a kids educational games package, a good improvement would be the introduction of fun/silly sounds to help keep the user engaged, but also to provide an additional form of 'forward' feedback.
+          {`Since this is a kids educational games package, a good improvement would be the introduction of fun/silly sounds to help keep the user engaged, but also to provide an additional form of 'forward' feedback.`}
         </li>
       </ol>
     </main >
